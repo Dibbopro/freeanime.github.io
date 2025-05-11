@@ -27,7 +27,6 @@ fetch("https://graphql.anilist.co", {
 })
 .then(response => response.json())
 .then(data => {
-  // Remove loading message
   animeList.innerHTML = "";
 
   const animes = data.data.Page.media;
