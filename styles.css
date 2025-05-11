@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#anime-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#anime-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#anime-list li:last-child {
+  border-bottom: none;
+}
