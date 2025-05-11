@@ -1,12 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Anime Watch Site</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AnimeFlix</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    /* Basic styles inline for demo - move to styles.css in real project */
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: #202020;
+    }
+    .navbar-brand {
+      color: #f55b5b;
+      font-weight: bold;
+    }
+    .anime-card {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .anime-card:hover {
+      transform: scale(1.03);
+    }
+    .anime-card img {
+      width: 100%;
+      height: auto;
+    }
+    .anime-title {
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .banner {
+      background: url('https://i.ibb.co/3fTvd5j/sample-banner.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .banner h1 {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 5px;
+      font-size: 40px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+      background-color: #1a1a1a;
+    }
+  </style>
 </head>
 <body>
-  <h1>Anime Watch Site</h1>
-  <div id="anime-list"></div>
-  <script src="script.js"></script>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark px-3">
+    <a class="navbar-brand" href="#">AnimeFlix</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Browse</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Genres</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Watch Your Favorite Anime Free</h1>
+  </div>
+
+  <!-- Anime Cards -->
+  <div class="container my-5">
+    <h2 class="mb-4">Popular Anime</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="anime-card">
+          <img src="https://i.ibb.co/DWDK67Z/aot.jpg" alt="Attack on Titan">
+          <div class="anime-title">Attack on Titan</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="anime-card">
+          <img src="https://i.ibb.co/Pjvv9qK/demon-slayer.jpg" alt="Demon Slayer">
+          <div class="anime-title">Demon Slayer</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="anime-card">
+          <img src="https://i.ibb.co/9pB6hhW/jujutsu.jpg" alt="Jujutsu Kaisen">
+          <div class="anime-title">Jujutsu Kaisen</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="anime-card">
+          <img src="https://i.ibb.co/Y3RddQ6/my-hero.jpg" alt="My Hero Academia">
+          <div class="anime-title">My Hero Academia</div>
+        </div>
+      </div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 AnimeFlix. All rights reserved. | Built for educational/demo purposes.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
